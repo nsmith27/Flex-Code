@@ -1,0 +1,11 @@
+language: c++
+
+addons:
+  apt:
+    packages:
+      - valgrind
+
+script:
+- make
+- make test_expression_tree
+- make memcheck_expression_tree

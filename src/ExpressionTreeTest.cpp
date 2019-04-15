@@ -22,7 +22,7 @@ void checkTest(string test, T is, U expected){
    }
    else{
       cout << "****Failed**** " << test << endl;
-      cout << "        Actual: " << is << " Expected: " << expected << endl;
+	  cout << " Actual: " << is << endl <<  " Expected: " << expected << endl;
    }
 
 }
@@ -153,8 +153,8 @@ int main() {
 	
 	cout << "************************************\n\n";
 
-	cout << "Passed" << correct_tests << "/" << total_tests << endl;
-	cout << "Score:" << (float)correct_tests/total_tests*60.0 << endl;
+	cout << "Passed: " << correct_tests << "/" << total_tests << endl;
+	cout << "Score: " << (float)correct_tests/total_tests*60.0 << endl;
 
 	return 0;
 }
